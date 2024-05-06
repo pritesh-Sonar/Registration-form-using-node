@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form </title>
+<style>
+    *{
+    margin: 0%;
+}
+
+body{
+   margin-top: 25rem;
+    background-color: bisque;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.register_form{
+    height: 15rem;
+    width:30rem;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(80, 187, 226);
+    border-radius: 15%;
+}
+input{
+    height: 25px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+button{
+    background-color: black;
+    align-items: center;
+    margin-left: 130px;
+    margin-top: 40px;
+    color: antiquewhite;
+    border: 2px solid red;
+    border-radius: 15%;
+}
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 110px;
+    border: 2px solid black;
+    height: 20px;
+    width: 100px;
+    color: crimson;
+    
+}
+</style>
+
+</head>
+
+
+<body>
+<div class="register_form">
+    
+<form action="/register" method="post" id="form">
+    <input type="text" name="username" placeholder="Username"><br>
+    <input type="email" name="email" placeholder="Email"><br>
+    <input type="password" name="password" placeholder="Password"><br>
+    <button type="submit">Register</button>
+    <a href="/users">Show Users</a>
+</form>
+
+</div>
+</body>
+</html>
